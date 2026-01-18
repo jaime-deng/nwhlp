@@ -14,32 +14,45 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Glitch Text Effect (Random characters)
-    const glitchElement = document.querySelector('.glitch');
-    if (glitchElement) {
-        const originalText = glitchElement.getAttribute('data-text');
-        const possibleChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()';
+    // Typewriter Effect
+    const typewriterElement = document.querySelector('.typewriter-text');
+    if (typewriterElement) {
+        const textLines = [
+            "SMART VIDEO",
+            "SURVEILLANCE"
+        ];
 
-        glitchElement.addEventListener('mouseover', () => {
-            let iteration = 0;
-            const interval = setInterval(() => {
-                glitchElement.innerText = originalText
-                    .split('')
-                    .map((letter, index) => {
-                        if (index < iteration) {
-                            return originalText[index];
-                        }
-                        return possibleChars[Math.floor(Math.random() * 46)];
-                    })
-                    .join('');
+        let lineIndex = 0;
+        let charIndex = 0;
+        let isTyping = true;
 
-                if (iteration >= originalText.length) {
-                    clearInterval(interval);
+        // Initial set to min-height to prevent layout jump
+        typewriterElement.style.minHeight = '1.1em';
+
+        function typeWriter() {
+            if (lineIndex < textLines.length) {
+                const currentLine = textLines[lineIndex];
+
+                if (charIndex < currentLine.length) {
+                    if (charIndex === 0 && lineIndex > 0) {
+                        typewriterElement.innerHTML += '<br>';
+                    }
+                    typewriterElement.innerHTML += currentLine.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 40); // Typing speed
+                } else {
+                    lineIndex++;
+                    charIndex = 0;
+                    setTimeout(typeWriter, 100); // Pause before next line
                 }
+            } else {
+                // Done typing, add blinking cursor
+                typewriterElement.classList.add('typing-done');
+            }
+        }
 
-                iteration += 1 / 3;
-            }, 30);
-        });
+        // Start typing after a short delay
+        setTimeout(typeWriter, 500);
     }
 
     // Dynamic Background Canvas

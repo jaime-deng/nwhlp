@@ -20,11 +20,11 @@
     <header class="main-header">
         <div class="logo">METAGROS <span class="version">// v.0.0.1</span></div>
         <nav>
-            <a href="#capabilities" class="nav-link" data-text="CAPABILITIES">CAPABILITIES</a>
-            <a href="#architecture" class="nav-link" data-text="ARCHITECTURE">ARCHITECTURE</a>
-            <a href="#key-features" class="nav-link" data-text="KEY FEATURES">KEY FEATURES</a>
-            <a href="#missions" class="nav-link" data-text="MISSIONS">MISSIONS</a>
-            <a href="#security" class="nav-link" data-text="SECURITY">SECURITY</a>
+            <a href="#capabilities" class="nav-link" data-text="FEATURES">FEATURES</a>
+            <a href="#architecture" class="nav-link" data-text="STACK">STACK</a>
+            <a href="#key-features" class="nav-link" data-text="STORY">STORY</a>
+            <a href="#missions" class="nav-link" data-text="ROADMAP">ROADMAP</a>
+            <a href="#security" class="nav-link" data-text="LESSONS">LESSONS</a>
         </nav>
         <div class="status-indicator">
             <button id="theme-toggle" class="btn-secondary"
@@ -36,11 +36,10 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <div class="shutter-text">KINETIC SITUATIONAL AWARENESS</div>
-                <h1 class="glitch" data-text="REAL-TIME & RETROSPECTIVE VIDEO INTELLIGENCE">REAL-TIME & RETROSPECTIVE
-                    VIDEO<br>INTELLIGENCE</h1>
-                <p class="hero-sub">Metagros transforms raw video telemetry into actionable operational insights,
-                    enabling command centers to preempt kinetic events rather than merely record them.</p>
+                <div class="shutter-text">NWHACKS 2026 PROJECT</div>
+                <h1 class="typewriter-text"></h1>
+                <p class="hero-sub">We wanted to make security footage easier to search and monitor. No more watching
+                    hours of empty video.</p>
                 <div class="cta-group">
                     <a href="https://github.com/rferdous115/metagros-surveillance" target="_blank"
                         class="btn-primary">SOURCE CODE</a>
@@ -55,26 +54,21 @@
         <section id="capabilities" class="section-container">
             <div class="section-header">
                 <span class="section-number">01</span>
-                <h2>CAPABILITIES OVERVIEW</h2>
+                <h2>PROJECT OVERVIEW</h2>
             </div>
 
             <div class="capabilities-grid">
                 <!-- Card 1 -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>EDGE INFERENCE ENGINE</h3>
+                        <h3>THE PROBLEM</h3>
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><strong>Zero-Latency Object Recognition</strong>: Microsecond detection of persons,
-                                vehicles, and assets on local hardware.</li>
-                            <li><strong>Behavioral Anomaly Detection</strong>:
-                                <ul>
-                                    <li>Loitering Vectors</li>
-                                    <li>Gathering Analysis</li>
-                                    <li>Perimeter Breach (Geofence)</li>
-                                </ul>
+                            <li><strong>Too Much Footage</strong>: Security teams can't watch everything at once.</li>
+                            <li><strong>Hard to Search</strong>: Finding a specific event in hours of video is tedious.
                             </li>
+                            <li><strong>Review Fatigue</strong>: Important events get missed when attention wavers.</li>
                         </ul>
                     </div>
                 </div>
@@ -82,18 +76,15 @@
                 <!-- Card 2 -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>DEEP SEMANTIC ANALYSIS</h3>
+                        <h3>WHAT IT DOES</h3>
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><strong>Multi-Modal VLM Integration</strong>: Leveraging Twelve Labs Pegasus-1 for
-                                semantic understanding.</li>
-                            <li><strong>Contextual Interrogation</strong>:
-                                <div class="code-block">
-                                    <span class="prompt">> Query:</span> "Identify hostile surveillance"<br>
-                                    <span class="output">> Output:</span> "Target A photographing entry at 1400."
-                                </div>
+                            <li><strong>Live Detection</strong>: Real-time object detection on live video using YOLO.
                             </li>
+                            <li><strong>Semantic Search</strong>: Allows natural language search over recorded footage.
+                            </li>
+                            <li><strong>Effort Reduction</strong>: Reduces time needed to review footage.</li>
                         </ul>
                     </div>
                 </div>
@@ -101,13 +92,13 @@
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>OPERATIONAL WORKFLOWS</h3>
+                        <h3>HACKATHON GOALS</h3>
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><strong>Rule-Based Orchestration</strong>: Boolean logic for kinetic triggers.</li>
-                            <li><strong>Forensic Reconstruction</strong>: NLP search across indexed video archives.</li>
-                            <li><strong>Intelligence Packets</strong>: Automated PDF dossiers with evidenced clips.</li>
+                            <li><strong>Effective Monitoring</strong>: Helping teams focus on what matters.</li>
+                            <li><strong>Less Overwhelm</strong>: Filtering out the noise of constant video feeds.</li>
+                            <li><strong>Working Prototype</strong>: A functional desktop app built in 24 hours.</li>
                         </ul>
                     </div>
                 </div>
@@ -117,32 +108,32 @@
         <section id="architecture" class="section-container">
             <div class="section-header">
                 <span class="section-number">02</span>
-                <h2>SYSTEM ARCHITECTURE</h2>
+                <h2>HOW IT'S BUILT</h2>
             </div>
             <div class="architecture-diagram">
                 <div class="arch-col">
                     <div class="arch-box">
                         <span class="label">CORE</span>
-                        <span class="value">Python (PySide6)</span>
+                        <span class="value">Python + QT Framework</span>
                     </div>
                     <div class="arch-connector"></div>
                     <div class="arch-box">
                         <span class="label">VISION LAYER</span>
-                        <span class="value">YOLOv8 + Twelve Labs</span>
+                        <span class="value">YOLO (Ultralytics)</span>
                     </div>
                 </div>
                 <div class="arch-col center">
-                    <div class="arch-circle">METAGROS<br>ENGINE</div>
+                    <div class="arch-circle">APP<br>CORE</div>
                 </div>
                 <div class="arch-col">
                     <div class="arch-box">
-                        <span class="label">PROTOCOL</span>
-                        <span class="value">RTSP / USB Direct</span>
+                        <span class="label">SEARCH API</span>
+                        <span class="value">Twelve Labs API</span>
                     </div>
                     <div class="arch-connector"></div>
                     <div class="arch-box">
-                        <span class="label">ALERTING</span>
-                        <span class="value">OS Interrupts / Webhooks</span>
+                        <span class="label">PROCESSING</span>
+                        <span class="value">OpenCV</span>
                     </div>
                 </div>
             </div>
@@ -151,7 +142,7 @@
         <section id="key-features" class="section-container">
             <div class="section-header">
                 <span class="section-number">03</span>
-                <h2>KEY FEATURES</h2>
+                <h2>THE PROCESS</h2>
             </div>
             <div class="features-layout">
                 <div class="feature-image-col">
@@ -160,21 +151,18 @@
                 <div class="feature-list-col">
                     <div class="feature-item">
                         <span class="feature-arrow">↳</span>
-                        <p><strong>Next-Level Infrastructure:</strong> Metagros is built on top of high-performance edge
-                            compute, delivering seamless data integrations, a robust Ontology, and a secure foundation.
-                            Experience the reliability and performance you expect, elevated to new heights.</p>
+                        <p><strong>The Accomplishment:</strong> Successfully combined live detection with semantic video
+                            search, creating a unified interface for real-time and retrospective analysis.</p>
                     </div>
                     <div class="feature-item">
                         <span class="feature-arrow">↳</span>
-                        <p><strong>Configurable Setup:</strong> Tailored to meet your needs, Metagros' unique features
-                            include customizable layouts, rapid cross-application searches, and intuitive cross-tab
-                            interactions.</p>
+                        <p><strong>The Timeframe:</strong> Built a working desktop prototype within the strict hackathon
+                            timeframe, from concept to execution.</p>
                     </div>
                     <div class="feature-item">
                         <span class="feature-arrow">↳</span>
-                        <p><strong>Improved Collaboration:</strong> Adhering to high-security standards, Metagros
-                            introduces superior configurability to enhance collaboration, even across classification
-                            levels, all within a secure and efficient environment.</p>
+                        <p><strong>The Challenge:</strong> Managed real-time performance across video streams while
+                            integrating heavy AI models (and survived Cursor/Antigravity crashing!).</p>
                     </div>
                 </div>
             </div>
@@ -183,28 +171,28 @@
         <section id="missions" class="section-container">
             <div class="section-header">
                 <span class="section-number">04</span>
-                <h2>MISSION PROFILES</h2>
+                <h2>WHAT'S NEXT</h2>
             </div>
             <div class="mission-list">
                 <div class="mission-item">
-                    <span class="mission-id">MP-01</span>
+                    <span class="mission-id">WN-01</span>
                     <div class="mission-content">
-                        <h3>CRITICAL INFRASTRUCTURE</h3>
-                        <p>Monitoring secure perimeters for static loitering or unauthorized breach.</p>
+                        <h3>MULTI-CAMERA SUPPORT</h3>
+                        <p>Scaling the system to handle multiple simultaneous feeds for broader coverage.</p>
                     </div>
                 </div>
                 <div class="mission-item">
-                    <span class="mission-id">MP-02</span>
+                    <span class="mission-id">WN-02</span>
                     <div class="mission-content">
-                        <h3>URBAN DYNAMICS</h3>
-                        <p>Managing crowd flows and detecting density anomalies in public spaces.</p>
+                        <h3>REAL-WORLD TESTING</h3>
+                        <p>Deploying with real security camera feeds to validate performance in the field.</p>
                     </div>
                 </div>
                 <div class="mission-item">
-                    <span class="mission-id">MP-03</span>
+                    <span class="mission-id">WN-03</span>
                     <div class="mission-content">
-                        <h3>ASSET SECURITY</h3>
-                        <p>Automated surveillance of high-value inventory against theft or tampering.</p>
+                        <h3>SECURE REMOTE ACCESS</h3>
+                        <p>Enabling encrypted remote monitoring for command centers.</p>
                     </div>
                 </div>
             </div>
@@ -213,17 +201,18 @@
         <section id="security" class="section-container">
             <div class="section-header">
                 <span class="section-number">05</span>
-                <h2>SECURITY NOTICE</h2>
+                <h2>WHAT WE LEARNED</h2>
             </div>
             <div class="security-panel">
                 <div class="security-item">
-                    <h3>DATA SOVEREIGNTY</h3>
-                    <p>Real-time inference performs locally; only user-selected clips are transmitted for deep analysis.
-                    </p>
+                    <h3>HYBRID AI SYSTEMS</h3>
+                    <p>How to effectively combine traditional computer vision (OpenCV/YOLO) with modern VLM (Twelve
+                        Labs) models.</p>
                 </div>
                 <div class="security-item">
-                    <h3>AUDIT TRAILS</h3>
-                    <p>All automated decisions and detections are logged for post-action review.</p>
+                    <h3>SYSTEM DESIGN</h3>
+                    <p>Designing a system that balances real-time performance, accuracy, and usability in a desktop
+                        environment.</p>
                 </div>
             </div>
         </section>
@@ -232,7 +221,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">METAGROS</div>
-            <div class="footer-tagline">SEE EVERYTHING. MISS NOTHING.</div>
+            <div class="footer-tagline">Built for NWHacks 2026.</div>
             <div class="copyright">© 2026 METAGROS SYSTEMS. ALL RIGHTS RESERVED.</div>
         </div>
     </footer>
