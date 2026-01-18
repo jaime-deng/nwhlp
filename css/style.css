@@ -252,23 +252,34 @@ nav {
 }
 
 .hero-image-container {
-    flex: 1;
+    position: absolute;
+    /* Take out of flow to maximize size */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 60%;
+    /* Occupy right side securely */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     z-index: 1;
-    /* Behind text but visible */
-    padding-left: 40px;
+    pointer-events: none;
+    /* Let clicks pass through if it overlaps bits */
 }
 
 .hero-image {
-    max-width: 100%;
+    width: 100%;
+    /* Force width */
     height: auto;
-    max-height: 85vh;
+    max-height: 100vh;
+    /* Allow full height */
+    object-fit: cover;
     filter: grayscale(80%) contrast(1.2) drop-shadow(0 0 20px rgba(59, 130, 246, 0.4));
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    /* Glitch effect on hover could go here */
+    opacity: 0.8;
+    /* Slight fade to blend */
 }
 
 .cta-group {
