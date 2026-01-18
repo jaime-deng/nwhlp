@@ -17,6 +17,12 @@
     --grid-line-color: rgba(255, 255, 255, 0.03);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    /* Offset for fixed header */
+}
+
 * {
     margin: 0;
     padding: 0;
