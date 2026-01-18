@@ -264,11 +264,10 @@ nav {
 .hero-image {
     max-width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 85vh;
     filter: grayscale(80%) contrast(1.2) drop-shadow(0 0 20px rgba(59, 130, 246, 0.4));
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    border: 1px solid rgba(59, 130, 246, 0.2);
     /* Glitch effect on hover could go here */
 }
 
