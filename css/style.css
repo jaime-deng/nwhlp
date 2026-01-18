@@ -311,7 +311,9 @@ nav {
     gap: 20px;
 }
 
-button {
+button,
+.btn-primary,
+.btn-secondary {
     padding: 15px 30px;
     font-family: var(--font-mono);
     font-weight: 500;
@@ -321,6 +323,9 @@ button {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn-primary {
