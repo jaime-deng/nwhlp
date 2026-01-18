@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METAGROS | Kinetic Situational Awareness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="scan-line"></div>
+
+    <header class="main-header">
+        <div class="logo">METAGROS <span class="version">// v.1.0.4</span></div>
+        <nav>
+            <a href="#capabilities" class="nav-link" data-text="CAPABILITIES">CAPABILITIES</a>
+            <a href="#architecture" class="nav-link" data-text="ARCHITECTURE">ARCHITECTURE</a>
+            <a href="#missions" class="nav-link" data-text="MISSIONS">MISSIONS</a>
+            <a href="#security" class="nav-link" data-text="SECURITY">SECURITY</a>
+        </nav>
+        <div class="status-indicator">
+            <span class="status-dot"></span> SYSTEM ONLINE
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="shutter-text">KINETIC SITUATIONAL AWARENESS</div>
+                <h1 class="glitch" data-text="DECISION ADVANTAGE AT THE EDGE">DECISION ADVANTAGE<br>AT THE EDGE</h1>
+                <p class="hero-sub">Metagros transforms raw video telemetry into actionable operational insights, enabling command centers to preempt kinetic events rather than merely record them.</p>
+                <div class="cta-group">
+                    <button class="btn-primary">INITIATE DEMO</button>
+                    <button class="btn-secondary">READ WHITEPAPER</button>
+                </div>
+            </div>
+            <div id="hero-canvas-container"></div>
+        </section>
+
+        <section id="capabilities" class="section-container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>CAPABILITIES OVERVIEW</h2>
+            </div>
+            
+            <div class="capabilities-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>EDGE INFERENCE ENGINE</h3>
+                        <span class="icon">⚡</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Zero-Latency Object Recognition</strong>: Microsecond detection of persons, vehicles, and assets on local hardware.</li>
+                            <li><strong>Behavioral Anomaly Detection</strong>:
+                                <ul>
+                                    <li>Loitering Vectors</li>
+                                    <li>Gathering Analysis</li>
+                                    <li>Perimeter Breach (Geofence)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>DEEP SEMANTIC ANALYSIS</h3>
+                        <span class="icon">🧠</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Multi-Modal VLM Integration</strong>: Leveraging Twelve Labs Pegasus-1 for semantic understanding.</li>
+                            <li><strong>Contextual Interrogation</strong>:
+                                <div class="code-block">
+                                    <span class="prompt">> Query:</span> "Identify hostile surveillance"<br>
+                                    <span class="output">> Output:</span> "Target A photographing entry at 1400."
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>OPERATIONAL WORKFLOWS</h3>
+                        <span class="icon">⚙️</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Rule-Based Orchestration</strong>: Boolean logic for kinetic triggers.</li>
+                            <li><strong>Forensic Reconstruction</strong>: NLP search across indexed video archives.</li>
+                            <li><strong>Intelligence Packets</strong>: Automated PDF dossiers with evidenced clips.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="section-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>SYSTEM ARCHITECTURE</h2>
+            </div>
+            <div class="architecture-diagram">
+                <div class="arch-col">
+                    <div class="arch-box">
+                        <span class="label">CORE</span>
+                        <span class="value">Python (PySide6)</span>
+                    </div>
+                    <div class="arch-connector"></div>
+                    <div class="arch-box">
+                        <span class="label">VISION LAYER</span>
+                        <span class="value">YOLOv8 + Twelve Labs</span>
+                    </div>
+                </div>
+                <div class="arch-col center">
+                    <div class="arch-circle">METAGROS<br>ENGINE</div>
+                </div>
+                <div class="arch-col">
+                    <div class="arch-box">
+                        <span class="label">PROTOCOL</span>
+                        <span class="value">RTSP / USB Direct</span>
+                    </div>
+                    <div class="arch-connector"></div>
+                    <div class="arch-box">
+                        <span class="label">ALERTING</span>
+                        <span class="value">OS Interrupts / Webhooks</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="missions" class="section-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>MISSION PROFILES</h2>
+            </div>
+            <div class="mission-list">
+                <div class="mission-item">
+                    <span class="mission-id">MP-01</span>
+                    <div class="mission-content">
+                        <h3>CRITICAL INFRASTRUCTURE</h3>
+                        <p>Monitoring secure perimeters for static loitering or unauthorized breach.</p>
+                    </div>
+                </div>
+                <div class="mission-item">
+                    <span class="mission-id">MP-02</span>
+                    <div class="mission-content">
+                        <h3>URBAN DYNAMICS</h3>
+                        <p>Managing crowd flows and detecting density anomalies in public spaces.</p>
+                    </div>
+                </div>
+                <div class="mission-item">
+                    <span class="mission-id">MP-03</span>
+                    <div class="mission-content">
+                        <h3>ASSET SECURITY</h3>
+                        <p>Automated surveillance of high-value inventory against theft or tampering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security" class="section-container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>SECURITY NOTICE</h2>
+            </div>
+            <div class="security-panel">
+                <div class="security-item">
+                    <h3>DATA SOVEREIGNTY</h3>
+                    <p>Real-time inference performs locally; only user-selected clips are transmitted for deep analysis.</p>
+                </div>
+                <div class="security-item">
+                    <h3>AUDIT TRAILS</h3>
+                    <p>All automated decisions and detections are logged for post-action review.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">METAGROS</div>
+            <div class="footer-tagline">SEE EVERYTHING. MISS NOTHING.</div>
+            <div class="copyright">© 2026 METAGROS SYSTEMS. ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
